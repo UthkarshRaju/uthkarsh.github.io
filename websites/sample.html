@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>sample</title>
+    <link rel="stylesheet" href="sample.css">
+    <link rel="icon" type="image/jpg" href="favicons/favicon.jpg" width='200'>
+</head>
+<body>
+    <header class="header">
+            <img src="favicons/favicon.jpg" alt=" Night Nighty">
+        Night Nighty Store.
+    </header>
+    <hr>
+    <nav class="nav">
+        <span class="Us">
+            <a href="home.html">Home</a>&nbsp;|
+            <a href="aboutus.html" target="blank">About Us</a>&nbsp;|
+            <a href="contactus.html" target="blank" action="onclick">Contact US</a>&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;
+        </span>
+                <span  class="link">
+                    <a href="https://www.google.com" target="blank">Google</a>
+                    &nbsp;|&nbsp;
+                    <a href="https://www.youtube.com" target="blank">Youtube</a>
+                </span>
+ <form method="POST" action="shopping.html" class="form">
+     <div class="form-element">
+         <label for="firstname">FirstName:</label>
+         <input type="text" name="firstname" placeholder="Enter FirstName" required>
+     </div><br><br>
+     <div class="form-element">
+        <label for="lastname">LastName:</label>
+        <input type="text" name="lastname" placeholder="Enter lastname" required>
+    </div><br><br>
+    <div class="form-element">
+        <label for="email">Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="email" name="email" placeholder="Enter Email" required>
+    </div><br><br>
+    <div class="form-element">
+        <label for="password">Password:</label>
+        <input type="password" name="password" placeholder="Enter password" required minlength="8">
+    </div><br><br>
+    <!--<div class="form-element">
+        <label for="adderess">Address:</label><br>
+        <textarea type="text" name="address" placeholder="Enter adderess" cols="50" rows="10"></textarea>
+    </div>--><br><br>
+    <div class="button">
+        <input type="submit" name="submit" onclick="message()"></button>
+    </div>
+ </form>
+ <script>
+    function message()
+    {
+            alert("Thank you for registering.");
+    }
+   </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration</title>
+    <link rel="stylesheet" href="style1.css">
+    <style>
+        h6{
+            color: black;
+            border: black;
+            background-color: red;
+            width: fit-content;
+        }
+    </style>
+</head>
+<body id="secondpage">
+    <h2>Sharing Under Progress...</h2>
+    <form method="POST" action="sharing.html" name="form">
+        Firstname: 
+        &nbsp;<input type="text" name="firstname" required="required"><br>
+        Lastname: 
+        &nbsp;<input type="text" name="lastname" required="required" i><br><br>
+        Email:  
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+        <input type="email" name="Email" required="required"><br>
+        Password:
+        &nbsp;&nbsp;&nbsp;<input type="password" name="password" minlength="8" maxlength="15" required="required"><br><br>
+        Date Of Birth:
+        <input type="date" name="date" required="required">
+        <input type="submit" name="submit" value="submit" onclick="register()"><br>
+        </form>
+        <script>
+            function register()
+            {
+                let fform =document.forms["form"] ["firstname"] ["password"].value;
+                if(fform =="")
+                {
+                  alert("Fill the Details!");
+                 return false; 
+                }
+                else
+                {
+                    alert("Thank you for registering.")
+                }
+            }
+        </script>
+        </body>
+        <h6><u>CAUTION: This page is always menitored by Police Department. 
+            This page doesn't encourge any sexual content/feelings.</u></h6>
+</html>

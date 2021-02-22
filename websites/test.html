@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Purchase Information</title>
+    <script type="text/javascript">
+        function calcDiscount(){
+            totalPrice = document.getElementById("Total");
+            iCost=Number(document.getElementById("Price").value);
+            iDiscount=Number(document.getElementById("Discount").value);
+            totalPrice.value = iCost- (iDiscount*iCost)/100;
+        }
+        function populate(){
+            sel= document.getElementById("Nighty").value;
+            if(sel!=''){
+                fc= document.getElementById("fab_color");
+                fc.innerHTML = "";
+                if(sel=='N'){
+                    opts=['Cotton','Polyster','Satin']
+                }else if(sel=='L'){
+                    opts=['GBR','VARALAXMI','ANR']
+                }else{
+                    opts=['Red','Green','White','Black']
+                }
+                for(i=0;i<opts.length;i++){
+                        var option = document.createElement("option");
+                        option.text = opts[i]
+                        fc.add(option);
+                    }
+
+            }else{
+                alert('not sel')
+            }
+        }    </script>
+    <style>
+        h1{
+            color: rgb(10, 2, 0);
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+          }
+        body{
+            background-image: url("no-plans-sleepwear-9.jpg");
+            background-size: cover;
+            }
+                      
+            video
+            {
+              align-content: center;
+            }
+            </style>
+    <link rel="icon" type="image/jpg" href="favicons/favicon.jpg" width='200' height='200'>
+</head>
+<body>
+<h1><b></b> Night<br><u>Nighty</u></h1>
+    <div>
+        <form>
+        Item<br><select name="Nighties" id="Nighty" onchange="populate()">
+        <option value="">Select Item..</option>
+        <option value="N">Nighties</option>
+        <option value="L">Leggings</option>
+        <option value="C">Chinnies</option>
+        </select>
+<br><br>
+            Item<br><select id="fab_color" placeholder="None">
+            </select><br>
+                Sizes<br><input name="Size" list="Size" placeholder="Sizes">
+            <datalist id="Size">
+                <option value="XXL"></option>
+                <option value="XL"></option>
+                <option value="L"></option>
+            </datalist>
+</div><br>
+
+Price <br><input id="Price" type="number" placeholder="Enter the price" name="Price" min="0"><br><br>
+Discount <br><input id="Discount" type="number" placeholder="Enter discount %" name="Discount" min="0"><br><br>
+
+    <button type= "button" onclick="javascript:calcDiscount()">Total</button><br>
+    <input readonly id="Total" placeholder="Rupees" name="Total">
+    </form>
+</div><br><br>
+</body>
+</html>

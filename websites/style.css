@@ -1,0 +1,16 @@
+body{
+    background-color: blanchedalmond;
+}
+h1
+{
+    background-color: burlywood;
+    color: black;
+}
+.font-red{
+    color: red;
+}
+unique{
+    border: 2px solid yellow
+}
+.bg-blue{background-color: blue;}
+.bg-yellow{background-color: yellow;}

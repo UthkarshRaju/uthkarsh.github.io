@@ -1,0 +1,42 @@
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>Purchase Information</title>
+    <script type="number/javascript" src="discount1.js">
+    </script>
+</head>
+<h1><b></b>R.R Nighties</h1>
+    <div>
+        <form>
+        <input name="Nighties" list="Nighty" placeholder="Nighty">
+        <datalist id="Nighty">
+        <option value="Cotton"></option>
+        <option value="Satorn"></option>
+        <option value="Polister"></option>
+            </datalist><br>
+            <input name="Size" list="Size" placeholder="Sizes">
+            <datalist id="Size">
+                <option value="XXL"></option>
+                <option value="XL"></option>
+                <option value="L"></option>
+            </datalist>
+</div><br>
+
+Price <br><input id="Price" type="number" placeholder="Enter the price" name="Price"><br><br>
+Discount <br><input id="Discount" type="number" placeholder="Enter discount %" name="Discount"><br><br>
+
+    <button type= "button" onclick= "document.getElementById('Total').value = discount(document.getElementById('Discount').value, document.getElementById('Price').value)">Total</button><br>
+    <input readonly id="Total" placeholder="Rupees" name="Total">
+            <!----- = function(){
+    var iCost = Number(document.getElementById("Price").value);
+    alert(iCost);
+    var iDiscount = Number(document.getElementById("Discount").value)/100;
+    //var dPrice = iDiscount;
+    //var dCost = (dPrice*iCost/100);
+    var finalPrice = iCost - iDiscount;
+    document.getElementById("Total").value = finalPrice.toFixed(2)
+        }--->
+    </form>
+</div>
+</body>
+</html>
